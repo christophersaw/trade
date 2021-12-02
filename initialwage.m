@@ -22,7 +22,7 @@ for n=1:87
 end
 chi_country=zeros(87);
 for n=1:87
-    chi_country(n)=sum( gamma_nj(:,n).*xi(1,n).*transpose(sum_piX(n,:)) );  % inside sum over sectors (note this term is meaningless)
+    chi_country(n)=sum( gamma_nj(:,n).*xi(n).*transpose(sum_piX(n,:)) );  % inside sum over sectors (note this term is meaningless)
 end
 chi=sum(chi_country(:));                                                       % outside sum over countries
 
