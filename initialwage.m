@@ -32,4 +32,4 @@ for n=1:50
     end
 end
 X0_usa=x0([1:200],1);
-Z0 = X0_usa-X0_rhs;
+Z0=X0_usa-X0_rhs;
